@@ -3,7 +3,7 @@ import React from 'react';
 const Col = (props) => {
     const {size} = props;
     return (
-        <div className={`col ${size ? `-$ {size}`: ''}`} style={Styles.col}>
+        <div className={`col${size ? `-${size}`: ''}`} style={Styles.col}>
             {props.children}
         </div>
     )
